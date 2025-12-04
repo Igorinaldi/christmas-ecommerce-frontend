@@ -1,55 +1,44 @@
-🎄 XmasShop - Frontend Ecommerce Natalizio
+# 🎄 XmasShop - Frontend Ecommerce Natalizio
 
-XmasShop è un'applicazione frontend per un ecommerce a tema natalizio, sviluppata in React, che si collega a un backend in Node.js. L’app permette agli utenti di registrarsi, accedere, gestire i propri dati, acquistare prodotti e inviare feedback, con un’interfaccia intuitiva e festiva.
+**XmasShop** è un'applicazione frontend per un ecommerce a tema natalizio, sviluppata in **React**, che si collega a un backend in **Node.js**. L’app permette agli utenti di registrarsi, accedere, gestire i propri dati, acquistare prodotti e inviare feedback, con un’interfaccia intuitiva e festiva.  
 
-📝 Funzionalità principali
+---
 
-Autenticazione e gestione account
+## 📝 Funzionalità principali
 
-Login e registrazione utenti
+- **Autenticazione e gestione account**
+  - Login e registrazione utenti
+  - Modifica dati personali (nome, email, ecc.)
+  - Cambio password sicuro
 
-Modifica dati personali (nome, email, ecc.)
+- **Gestione prodotti**
+  - Visualizzazione catalogo di prodotti a tema natalizio
+  - Acquisto dei prodotti disponibili
 
-Cambio password sicuro
+- **Gestione ordini**
+  - Storico degli ordini effettuati
+  - Visualizzazione dettagli di ciascun ordine
 
-Gestione prodotti
+- **Feedback**
+  - Possibilità di inviare feedback sui prodotti o sull’esperienza di acquisto
 
-Visualizzazione catalogo di prodotti a tema natalizio
+- **Esperienza utente**
+  - Tema natalizio completo con animazioni e colori a tema
+  - Interfaccia responsive per desktop e mobile
 
-Aggiunta di prodotti ai preferiti
+---
 
-Acquisto dei prodotti disponibili
+## 🛠️ Tecnologie utilizzate
 
-Gestione ordini
+- **Frontend:** React, React Router, Redux (o Context API), Axios  
+- **Stile e UI:** CSS Modules / Styled Components
+- **Gestione stato:** Context API  
+- **Autenticazione:** JWT con comunicazione verso il backend Node.js  
+- **Backend:** Node.js con Express (API REST)  
+- **Database:** MongoDB
+- **Altri strumenti:** Axios per le chiamate API, React Toastify per notifiche
 
-Storico degli ordini effettuati
 
-Visualizzazione dettagli di ciascun ordine
-
-Feedback
-
-Possibilità di inviare feedback sui prodotti o sull’esperienza di acquisto
-
-Esperienza utente
-
-Tema natalizio completo con animazioni e colori a tema
-
-Interfaccia responsive per desktop e mobile
-
-🛠️ Tecnologie utilizzate
-
-Frontend: React, React Router, Redux (o Context API), Axios
-
-Stile e UI: CSS Modules / Styled Components / Tailwind CSS (a scelta)
-
-Gestione stato: Redux Toolkit o Context API
-
-Autenticazione: JWT con comunicazione verso il backend Node.js
-
-Backend: Node.js con Express (API REST)
-
-Database: MongoDB / MySQL / PostgreSQL (gestito dal backend)
-
-Altri strumenti: ESLint, Prettier, Axios per le chiamate API, React Toastify per notifiche
-
+--- 
+## Login al sito
 ![Demo del sito](https://github.com/Igorinaldi/christmas-ecommerce-frontend/blob/master/src/assets/demo.gif)
