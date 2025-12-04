@@ -1,0 +1,55 @@
+.feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.feedback-card {
+  max-width: 600px; /* più grande e centrata */
+  width: 100%;
+}
+
+.feedback-card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #111827;
+}
+
+.feedback-card textarea {
+  width: 100%;
+  height: 70px; /* PIÙ GRANDE */
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 60px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 0 auto 60px; /* CENTRAZIONE VISIVA */
+  display: block; /* per centrare con margin auto */
+  resize: none;
+}
+
+.feedback-card textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.feedback-card button {
+  margin-top: 10px;
+  width: 50%;
+  background-color: #318e34ff;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto; /* CENTRAZIONE VISIVA */
+  display: block; /* per centrare con margin auto */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.feedback-card button:hover {
+  background-color: #0c4417ff;
+}

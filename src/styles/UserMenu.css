@@ -1,0 +1,98 @@
+/* Contenitore principale */
+.navbar-user {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: system-ui, sans-serif;
+  color: green;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Testo "Ciao, ..." */
+.navbar-user > span {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  transition: background 0.25s ease, backdrop-filter 0.25s ease;
+}
+
+.navbar-user > span:hover {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+/* MENU */
+.user-menu {
+  position: absolute;
+  top: 80%;
+  right: 0;
+
+  background: rgba(6, 12, 4, 1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  list-style: none;
+  padding: 0.6rem 0;
+  margin: 0;
+
+  border-radius: 12px;
+  min-width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+
+  /* Animazione apertura */
+  opacity: 0;
+  transform: translateY(-8px) scale(0.97);
+  animation: fadeInMenu 0.18s forwards cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeInMenu {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ITEMS */
+.user-menu li {
+  width: 100%;
+}
+
+/* Links & Buttons */
+.user-menu a,
+.user-menu button {
+  width: 100%;
+  display: block;
+  text-align: left;
+
+  padding: 0.65rem 1rem;
+  background: none;
+  border: none;
+  color: #222;
+
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Hover elegante */
+.user-menu a:hover,
+.user-menu button:hover {
+  background: rgba(0, 0, 0, 0.06);
+  padding-left: 1.25rem;
+}
+
+/* Logout più evidente */
+.user-menu button {
+  font-family: inherit;
+  font-weight: 600;
+  color: #b71c1c;
+}
+
+.user-menu button:hover {
+  background: rgba(183, 28, 28, 0.08);
+}

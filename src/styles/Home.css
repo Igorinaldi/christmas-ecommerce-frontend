@@ -1,0 +1,135 @@
+/* ================================
+HERO CONTAINER E IMMAGINE
+================================ */
+
+.welcome-toast {
+  position: fixed;
+  top: 20px;           /* distanza dal top */
+  left: 50%;           /* centrato orizzontalmente */
+  transform: translateX(-50%); /* effettivo centramento */
+  background-color: #f0f7f3ff;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: fadeIn 0.3s ease-out;
+  z-index: 9999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.hero-container {
+width: 100%;
+position: relative;
+overflow: hidden;
+}
+
+.hero-ratio {
+position: relative;
+width: 100%;
+height: 60%;
+padding-top: 13%; /* rapporto altezza/larghezza */
+}
+
+.hero-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover; /* mostra tutta l'immagine senza deformarla */
+object-position: center; /* centra l'immagine */
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+background-color: rgba(0, 0, 0, 0.3);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* ================================
+TESTO HERO
+================================ */
+.hero-text {
+color: #fff;
+font-size: 2.5rem;
+font-weight: bold;
+text-align: center;
+}
+
+@media (min-width: 640px) {
+.hero-text {
+font-size: 3.5rem;
+}
+}
+
+/* ================================
+PULSANTE
+================================ */
+button {
+background-color: #e3ab3bff; /* colore principale */
+color: #fff;
+border: none;
+padding: 0.65rem 1.5rem;
+font-size: 1rem;
+font-weight: 600;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.2s ease;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button:hover {
+background-color: #c12f60;
+transform: translateY(-2px);
+box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+button:active {
+transform: translateY(0);
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button:focus {
+outline: 2px solid #ff6fa3;
+outline-offset: 2px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+/* ================================
+BARRA DI RICERCA
+================================ */
+.search-bar-container {
+max-width: 900px;
+margin: 1.5rem auto;
+padding: 0 1rem;
+}
+
+.search-bar-input {
+width: 100%;
+padding: 0.75rem 1rem;
+border: 1px solid #ccc;
+border-radius: 0.5rem;
+font-size: 1rem;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar-input:focus {
+outline: none;
+border-color: #f87171;
+box-shadow: 0 2px 8px rgba(248,113,113,0.4);
+}

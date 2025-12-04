@@ -1,0 +1,90 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90.8vh;
+  
+  padding: 2rem;
+  background-image: url("/assets/sfondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 0 2px rgba(246, 240, 240, 0.3);
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #dfe7dfff;
+}
+
+.login-container p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+  color: #dfe7dfff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form input {
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #205509ff;
+  box-shadow: 0 0 0 2px rgba(248,113,113,0.3);
+}
+
+.login-form button {
+  padding: 0.75rem 1rem;
+  background-color: #10692fff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #767474ff;
+}
+
+.login-error {
+  color: #b91c1c;
+  margin-bottom: 1rem;
+}
+
+.login-register {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.login-register a {
+  color: #908e8eff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}

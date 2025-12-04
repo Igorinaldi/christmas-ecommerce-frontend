@@ -1,0 +1,80 @@
+.footer {
+  background: rgba(168, 20, 20, 0.85);
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h3 {
+  color: #eeeeee;
+  margin-bottom: 10px;
+}
+
+.logo {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-col a:hover {
+  color: #ffd166;
+}
+
+.footer-col form input {
+  width: 93%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.footer-col form button {
+  width: 100%;
+  padding: 10px;
+  background: #2b8e1cff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-col form button:hover {
+  background: #bf2f3b;
+}
+
+hr {
+  border-color: #ffffff30;
+  margin: 30px 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+}

@@ -1,0 +1,135 @@
+/* Wrapper principale full width */
+.about-wrapper {
+  width: 100%;
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenuto interno a tutta larghezza */
+.about-content {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+  color: #333;
+}
+
+/* Titolo principale */
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Paragrafo principale */
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Evidenziazione testo */
+.about-content .highlight {
+  color: #d6336c;
+  font-weight: 600;
+}
+
+/* Cards container full-width */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between; /* distribuisce su tutta la riga */
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Singola card */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1 1 calc(33.33% - 1.5rem); /* occupano 3 colonne su desktop */
+  min-width: 250px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+/* Hover card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* Titolo card */
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+/* Paragrafo card */
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Paragrafo finale */
+.closing {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: #444;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background: white;
+}
+
+.info-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.info-table td:first-child {
+  width: 150px;
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cards {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .card {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex: 1 1 100%; /* su mobile una card per riga */
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-content h1 {
+    font-size: 3.5rem;
+  }
+}

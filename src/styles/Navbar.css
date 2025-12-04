@@ -1,0 +1,173 @@
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(168, 20, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.15rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: opacity .2s ease;
+}
+.navbar-logo a:hover {
+  opacity: 0.8;
+}
+
+/* Menu */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links Menu */
+.navbar-menu li a {
+  font-family: system-ui, sans-serif;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  padding: 3px 0;
+  transition: color .25s ease;
+}
+.navbar-menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width .3s ease;
+}
+.navbar-menu li a:hover::after {
+  width: 100%;
+}
+
+/* User wrapper */
+.navbar-user-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Navbar user */
+.navbar-user {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-user > span {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  transition: background 0.25s ease, backdrop-filter 0.25s ease;
+}
+.navbar-user > span:hover {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+/* Dropdown menu */
+.user-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  list-style: none;
+  padding: 0.6rem 0;
+  margin: 0;
+  border-radius: 12px;
+  min-width: 180px;
+  border: 1px solid rgba(255,255,255,0.45);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  animation: fadeInMenu 0.18s forwards cubic-bezier(0.16,1,0.3,1);
+}
+
+@keyframes fadeInMenu {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Dropdown items */
+.user-menu li {
+  width: 100%;
+}
+.user-menu a,
+.user-menu button {
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 0.65rem 1rem;
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, padding-left 0.2s ease;
+}
+.user-menu a:hover,
+.user-menu button:hover {
+  background: rgba(0,0,0,0.06);
+  padding-left: 1.25rem;
+}
+.user-menu button {
+  font-weight: 600;
+  color: #b71c1c;
+}
+.user-menu button:hover {
+  background: rgba(183, 28, 28, 0.08);
+}
+
+/* Logout button (optional extra style) */
+.logout-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .navbar-menu {
+    display: none; /* hamburger menu da implementare */
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: rgba(95, 167, 91, 0.95);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
